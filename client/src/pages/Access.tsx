@@ -1,7 +1,10 @@
 import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { MapView } from '@/components/Map';
 import { Link } from 'wouter';
+
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県中土佐町久礼')}`;
 
 export default function Access() {
   return (
@@ -25,16 +28,8 @@ export default function Access() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Map */}
               <div>
-                <div className="bg-gray-300 rounded-lg h-96 flex items-center justify-center shadow-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.5555555555555!2d133.3!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z33.5IMKwIDAn00IiAxMzMuM8KwIDAn00Ii!5e0!3m2!1sja!2sjp!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+                <div className="rounded-lg h-96 shadow-lg overflow-hidden">
+                  <MapView className="h-full" googleMapsUrl={GOOGLE_MAPS_URL} />
                 </div>
               </div>
 
@@ -54,7 +49,7 @@ export default function Access() {
                         高知県中土佐町久礼
                       </p>
                       <a
-                        href="https://www.google.com/maps"
+                        href={GOOGLE_MAPS_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-warm-accent hover:underline text-sm mt-2 inline-block"
@@ -164,7 +159,7 @@ export default function Access() {
                 Instagram
               </a>
               <a
-                href="https://www.google.com/maps"
+                href={GOOGLE_MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-warm-brown text-white rounded-lg hover:opacity-90 transition-all duration-200 font-medium inline-flex items-center justify-center gap-2"
