@@ -21,9 +21,9 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img
-              src="/manus-storage/logo-nishimura_ea8f83d5.png"
+              src="/images/logo.jpg"
               alt="西村甘泉堂"
-              className="h-10 w-10"
+              className="h-10 w-10 rounded-full object-cover"
             />
             <span className="text-xl font-bold text-warm-brown hidden sm:inline">
               西村甘泉堂
