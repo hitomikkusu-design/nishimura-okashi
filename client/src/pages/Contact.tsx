@@ -4,6 +4,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { toast } from 'sonner';
 
+// TODO: 実際の送信先メールアドレスに差し替えてください
+const CONTACT_EMAIL = 'info@nishimura-kansendou.example.com';
+const CONTACT_PHONE = '0889-52-2953';
+
+const SUBJECT_LABELS: Record<string, string> = {
+  product: '商品についてのお問い合わせ',
+  order: 'ご注文について',
+  event: 'イベント・企画について',
+  other: 'その他のお問い合わせ',
+};
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,16 +31,29 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     // Validate form
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast.error('すべての必須項目を入力してください');
       return;
     }
 
-    // Show success message
-    toast.success('お問い合わせありがとうございます。確認いたします。');
-    
+    const subjectLabel = SUBJECT_LABELS[formData.subject] ?? formData.subject;
+    const mailSubject = `【西村甘泉堂 お問い合わせ】${subjectLabel}`;
+    const mailBody = [
+      `お名前: ${formData.name}`,
+      `メールアドレス: ${formData.email}`,
+      formData.phone ? `電話番号: ${formData.phone}` : null,
+      '',
+      formData.message,
+    ]
+      .filter((line) => line !== null)
+      .join('\n');
+
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+    toast.success('メールアプリを開きます。内容を確認して送信してください。');
+
     // Reset form
     setFormData({
       name: '',
@@ -178,8 +202,8 @@ export default function Contact() {
                 <p className="text-gray-700 mb-4">
                   お電話でのお問い合わせもお受けしています。
                 </p>
-                <a href="tel:" className="text-warm-accent hover:underline font-semibold">
-                  電話番号を表示
+                <a href={`tel:${CONTACT_PHONE}`} className="text-warm-accent hover:underline font-semibold">
+                  {CONTACT_PHONE}
                 </a>
               </div>
 
@@ -192,7 +216,7 @@ export default function Contact() {
                 <p className="text-gray-700 mb-4">
                   メールでのお問い合わせもお受けしています。
                 </p>
-                <a href="mailto:" className="text-warm-accent hover:underline font-semibold">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-warm-accent hover:underline font-semibold">
                   メールを送信
                 </a>
               </div>
