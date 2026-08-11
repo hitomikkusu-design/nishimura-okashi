@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/okashi-shop-github-pages-xwoe3t]
   workflow_dispatch:
 
 permissions:
