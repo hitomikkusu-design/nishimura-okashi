@@ -57,14 +57,14 @@ export default function Products() {
       category: '焼き菓子',
       description: 'しょうがの風味がふんわり香る、素朴な焼き菓子です。',
       image: '/images/product-shogayaki.jpg',
-      price: '―',
+      price: '¥250',
     },
     {
       name: '堅パン',
       category: '焼き菓子',
       description: '昔ながらの製法でじっくり焼き上げた、素朴な堅パンです。',
       image: '/images/product-katapan.jpg',
-      price: '―',
+      price: '¥250',
     },
     {
       name: 'ケンピ',
