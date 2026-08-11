@@ -28,7 +28,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/images/storefront.jpg"
+                  src="./images/storefront.jpg"
                   alt="西村甘泉堂の店舗"
                   className="rounded-lg shadow-lg w-full"
                 />
@@ -113,7 +113,7 @@ export default function About() {
               </div>
               <div>
                 <img
-                  src="/images/about-craftsman-1.jpg"
+                  src="./images/about-craftsman-1.jpg"
                   alt="西村のおんちゃん"
                   className="rounded-lg shadow-lg w-full"
                 />

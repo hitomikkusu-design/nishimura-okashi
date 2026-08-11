@@ -21,7 +21,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img
-              src="/images/logo.jpg"
+              src="./images/logo.jpg"
               alt="西村甘泉堂"
               className="h-10 w-10 rounded-full object-cover"
             />

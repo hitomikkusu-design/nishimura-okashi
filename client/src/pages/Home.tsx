@@ -15,7 +15,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-screen max-h-96 md:max-h-screen flex items-center justify-center overflow-hidden">
           <img
-            src="/images/storefront.jpg"
+            src="./images/storefront.jpg"
             alt="西村甘泉堂の店構えと店員"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -75,17 +75,17 @@ export default function Home() {
                 {
                   name: '浮粉まんじゅう',
                   description: '白あんこをたっぷり包んだ、もちもちのまんじゅう',
-                  image: '/images/products-showcase-2.jpg',
+                  image: './images/products-showcase-2.jpg',
                 },
                 {
                   name: 'いなかまんじゅう',
                   description: '粒あんこをぎゅっと包んだ、昔ながらのまんじゅう',
-                  image: '/images/products-showcase-1.jpg',
+                  image: './images/products-showcase-1.jpg',
                 },
                 {
                   name: '栗まんじゅう',
                   description: '白あんこと栗を包んだ、風味豊かなまんじゅう',
-                  image: '/images/products-showcase-1.jpg',
+                  image: './images/products-showcase-1.jpg',
                 },
               ].map((product, idx) => (
                 <div
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/images/about-craftsman-1.jpg"
+                  src="./images/about-craftsman-1.jpg"
                   alt="西村のおんちゃん"
                   className="rounded-lg shadow-lg w-full"
                 />
