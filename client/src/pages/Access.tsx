@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { MapView } from '@/components/Map';
 import { Link } from 'wouter';
 
-const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県中土佐町久礼')}`;
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県高岡郡中土佐町久礼6528')}`;
 
 export default function Access() {
   return (
@@ -46,7 +46,7 @@ export default function Access() {
                     <div>
                       <h3 className="font-bold text-warm-brown mb-2">住所</h3>
                       <p className="text-gray-700">
-                        高知県中土佐町久礼
+                        高知県高岡郡中土佐町久礼6528
                       </p>
                       <a
                         href={GOOGLE_MAPS_URL}
@@ -64,7 +64,7 @@ export default function Access() {
                     <Clock className="text-warm-accent flex-shrink-0 mt-1" size={24} />
                     <div>
                       <h3 className="font-bold text-warm-brown mb-2">営業時間</h3>
-                      <p className="text-gray-700">9:00 - 18:00</p>
+                      <p className="text-gray-700">10:00 - 17:00頃</p>
                     </div>
                   </div>
 
@@ -73,7 +73,7 @@ export default function Access() {
                     <Clock className="text-warm-accent flex-shrink-0 mt-1" size={24} />
                     <div>
                       <h3 className="font-bold text-warm-brown mb-2">定休日</h3>
-                      <p className="text-gray-700">月曜日</p>
+                      <p className="text-gray-700">水曜日</p>
                     </div>
                   </div>
 
@@ -82,8 +82,8 @@ export default function Access() {
                     <Phone className="text-warm-accent flex-shrink-0 mt-1" size={24} />
                     <div>
                       <h3 className="font-bold text-warm-brown mb-2">電話番号</h3>
-                      <a href="tel:" className="text-warm-accent hover:underline">
-                        お電話でお問い合わせください
+                      <a href="tel:0889-52-2953" className="text-warm-accent hover:underline">
+                        0889-52-2953
                       </a>
                     </div>
                   </div>

@@ -2,6 +2,9 @@ import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { MapView } from '@/components/Map';
+
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県高岡郡中土佐町久礼6528')}`;
 
 export default function Home() {
   return (
@@ -162,8 +165,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="bg-gray-300 rounded-lg h-64 md:h-96 flex items-center justify-center">
-                  <span className="text-gray-500">Google Maps</span>
+                <div className="rounded-lg h-64 md:h-96 overflow-hidden">
+                  <MapView className="h-full" googleMapsUrl={GOOGLE_MAPS_URL} />
                 </div>
               </div>
               <div>
@@ -173,15 +176,15 @@ export default function Home() {
                 <div className="space-y-4 mb-8">
                   <div>
                     <p className="font-semibold text-warm-brown">住所</p>
-                    <p className="text-gray-700">高知県中土佐町久礼</p>
+                    <p className="text-gray-700">高知県高岡郡中土佐町久礼6528</p>
                   </div>
                   <div>
                     <p className="font-semibold text-warm-brown">営業時間</p>
-                    <p className="text-gray-700">9:00 - 18:00</p>
+                    <p className="text-gray-700">10:00 - 17:00頃</p>
                   </div>
                   <div>
                     <p className="font-semibold text-warm-brown">定休日</p>
-                    <p className="text-gray-700">月曜日</p>
+                    <p className="text-gray-700">水曜日</p>
                   </div>
                 </div>
                 <Link
