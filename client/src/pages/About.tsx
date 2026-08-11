@@ -13,7 +13,7 @@ export default function About() {
         <section className="py-12 md:py-20 bg-white">
           <div className="container">
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-warm-brown">
-              西村菓子店について
+              西村甘泉堂について
             </h1>
             <div className="section-divider" />
             <p className="text-center text-lg text-gray-700 max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ export default function About() {
               <div>
                 <img
                   src="/images/storefront.jpg"
-                  alt="西村菓子店の店舗"
+                  alt="西村甘泉堂の店舗"
                   className="rounded-lg shadow-lg w-full"
                 />
               </div>
@@ -38,13 +38,13 @@ export default function About() {
                   75年の歴史
                 </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  西村菓子店は、創業から75年間、高知県中土佐町久礼で愛されてきた昔ながらのお菓子屋さんです。
+                  西村甘泉堂は、創業から75年間、高知県中土佐町久礼で愛されてきた昔ながらのお菓子屋さんです。
                 </p>
                 <p className="text-gray-700 mb-4 leading-relaxed">
                   元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。その想いと技は、今も変わることなく、多くのお客様に喜ばれています。
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村菓子店のこだわりです。
+                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
                 </p>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function About() {
         <section className="py-12 md:py-20 bg-white">
           <div className="container text-center">
             <h2 className="text-3xl font-bold mb-6 text-warm-brown">
-              西村菓子店の商品をご紹介
+              西村甘泉堂の商品をご紹介
             </h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
               75年の歴史と想いが詰まった、おんちゃんの手づくりお菓子。ぜひ、ご賞味ください。

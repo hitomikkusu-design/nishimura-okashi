@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { MapView } from '@/components/Map';
 import { Link } from 'wouter';
 
-const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県高岡郡中土佐町久礼6528')}`;
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村甘泉堂 高知県高岡郡中土佐町久礼6528')}`;
 
 export default function Access() {
   return (
@@ -36,7 +36,7 @@ export default function Access() {
               {/* Store Details */}
               <div>
                 <h2 className="text-3xl font-bold mb-8 text-warm-brown">
-                  西村菓子店
+                  西村甘泉堂
                 </h2>
 
                 <div className="space-y-6">

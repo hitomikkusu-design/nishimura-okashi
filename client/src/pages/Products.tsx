@@ -45,6 +45,41 @@ export default function Products() {
       image: '/images/products-showcase-1.jpg',
       price: '¥130',
     },
+    {
+      name: '中菓子',
+      category: '高知の郷土菓子',
+      description: '高知県でも作っているお店がわずか3軒しかない、貴重な郷土菓子です。',
+      image: '/images/product-chugashi.jpg',
+      price: '¥250',
+    },
+    {
+      name: 'しょうが焼き',
+      category: '焼き菓子',
+      description: 'しょうがの風味がふんわり香る、素朴な焼き菓子です。',
+      image: '/images/product-shogayaki.jpg',
+      price: '―',
+    },
+    {
+      name: '堅パン',
+      category: '焼き菓子',
+      description: '昔ながらの製法でじっくり焼き上げた、素朴な堅パンです。',
+      image: '/images/product-katapan.jpg',
+      price: '―',
+    },
+    {
+      name: 'ケンピ',
+      category: '小麦粉のケンピ',
+      description: '昔ながらの小麦粉で作る、素朴な味わいのケンピ菓子です。',
+      image: '/images/product-kenpi.jpg',
+      price: '¥250',
+    },
+    {
+      name: 'かつおモナカ',
+      category: 'つぶあん・こしあん・ゆずあん',
+      description: '土佐かつおの形をしたモナカ。つぶあん・こしあん・ゆずあんの3種類からお選びいただけます。',
+      image: '/images/product-katsuo-monaka.jpg',
+      price: '¥280',
+    },
   ];
 
   return (
@@ -119,7 +154,7 @@ export default function Products() {
                   素材へのこだわり
                 </h3>
                 <p>
-                  西村菓子店のすべてのお菓子は、厳選した素材を使って作られています。安心して食べられる、体に優しいお菓子を心がけています。
+                  西村甘泉堂のすべてのお菓子は、厳選した素材を使って作られています。安心して食べられる、体に優しいお菓子を心がけています。
                 </p>
               </div>
 

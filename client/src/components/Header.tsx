@@ -7,7 +7,7 @@ export default function Header() {
 
   const navItems = [
     { label: 'ホーム', href: '/' },
-    { label: '西村菓子店について', href: '/about' },
+    { label: '西村甘泉堂について', href: '/about' },
     { label: 'おんちゃんの物語', href: '/story' },
     { label: '商品紹介', href: '/products' },
     { label: '店舗案内', href: '/access' },
@@ -22,11 +22,11 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/manus-storage/logo-nishimura_ea8f83d5.png"
-              alt="西村菓子店"
+              alt="西村甘泉堂"
               className="h-10 w-10"
             />
             <span className="text-xl font-bold text-warm-brown hidden sm:inline">
-              西村菓子店
+              西村甘泉堂
             </span>
           </Link>
 

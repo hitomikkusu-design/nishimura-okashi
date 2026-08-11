@@ -32,7 +32,7 @@ export default function Story() {
                   プロフィール
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  西村菓子店の創業者にして、今も毎日店に立つ「西村のおんちゃん」。元コックとしてのキャリアを持ち、その経験と想いが、すべてのお菓子に詰まっています。
+                  西村甘泉堂の創業者にして、今も毎日店に立つ「西村のおんちゃん」。元コックとしてのキャリアを持ち、その経験と想いが、すべてのお菓子に詰まっています。
                 </p>
               </div>
             </div>
@@ -47,10 +47,10 @@ export default function Story() {
                   「西村のおんちゃん」は、もともとコックとしてのキャリアを持っていました。その経験の中で、「食べる人の喜ぶ顔を見たい」という想いが強くなっていきました。
                 </p>
                 <p>
-                  やがて、その想いは「昔ながらのお菓子を作りたい」という夢に変わり、西村菓子店を創業することになったのです。
+                  やがて、その想いは「昔ながらのお菓子を作りたい」という夢に変わり、西村甘泉堂を創業することになったのです。
                 </p>
                 <p>
-                  コックとしての経験と、菓子職人としての想いが合わさることで、西村菓子店独特の「やさしく懐かしい、昔ながらのお菓子」が生まれました。
+                  コックとしての経験と、菓子職人としての想いが合わさることで、西村甘泉堂独特の「やさしく懐かしい、昔ながらのお菓子」が生まれました。
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Story() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  創業から75年。多くの世代に愛されてきた西村菓子店。その歴史の中で、おんちゃんの想いと技は、今も変わることなく、毎日のお菓子作りに込められています。
+                  創業から75年。多くの世代に愛されてきた西村甘泉堂。その歴史の中で、おんちゃんの想いと技は、今も変わることなく、毎日のお菓子作りに込められています。
                 </p>
                 <p>
                   「昔ながらのお菓子」それは、単なる懐かしさではなく、おんちゃんが「食べる人の喜ぶ顔」を想いながら作り続けた、75年の想いの結晶なのです。
@@ -94,7 +94,7 @@ export default function Story() {
         <section className="py-12 md:py-20 bg-warm-beige">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-12 text-warm-brown">
-              おんちゃんが語る、西村菓子店の物語
+              おんちゃんが語る、西村甘泉堂の物語
             </h2>
 
             <div className="max-w-3xl mx-auto">
@@ -103,7 +103,7 @@ export default function Story() {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/7xRmgZE8PLo"
-                  title="西村のおんちゃんが語る、西村菓子店の物語"
+                  title="西村のおんちゃんが語る、西村甘泉堂の物語"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

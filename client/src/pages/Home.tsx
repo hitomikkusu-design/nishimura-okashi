@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapView } from '@/components/Map';
 
-const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村菓子店 高知県高岡郡中土佐町久礼6528')}`;
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('西村甘泉堂 高知県高岡郡中土佐町久礼6528')}`;
 
 export default function Home() {
   return (
@@ -16,14 +16,14 @@ export default function Home() {
         <section className="relative h-screen max-h-96 md:max-h-screen flex items-center justify-center overflow-hidden">
           <img
             src="/images/storefront.jpg"
-            alt="西村菓子店の店構えと店員"
+            alt="西村甘泉堂の店構えと店員"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30" />
 
           <div className="relative z-10 container text-center text-white">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              西村菓子店
+              西村甘泉堂
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               創業75年。元コックの「西村のおんちゃん」が、<br />
@@ -39,7 +39,7 @@ export default function Home() {
         <section className="py-12 md:py-20 bg-white">
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-warm-brown">
-              西村のおんちゃんが語る、<br className="md:hidden" />西村菓子店の物語
+              西村のおんちゃんが語る、<br className="md:hidden" />西村甘泉堂の物語
             </h2>
             <div className="section-divider" />
 
@@ -49,7 +49,7 @@ export default function Home() {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/7xRmgZE8PLo"
-                  title="西村のおんちゃんが語る、西村菓子店の物語"
+                  title="西村のおんちゃんが語る、西村甘泉堂の物語"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -136,13 +136,13 @@ export default function Home() {
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-warm-brown">
-                  西村菓子店について
+                  西村甘泉堂について
                 </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  創業75年の西村菓子店。元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。
+                  創業75年の西村甘泉堂。元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。
                 </p>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村菓子店のこだわりです。
+                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
                 </p>
                 <Link
                   href="/about"
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-warm-brown">
-                  西村菓子店
+                  西村甘泉堂
                 </h3>
                 <div className="space-y-4 mb-8">
                   <div>
