@@ -70,18 +70,18 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {[
                 {
-                  name: '手づくり大福',
-                  description: '季節の素材を使った、やさしい甘さの大福',
-                  image: '/images/products-showcase-1.jpg',
-                },
-                {
-                  name: '昔ながらのせんべい',
-                  description: 'コツコツと焼き上げた、香ばしいせんべい',
+                  name: '浮粉まんじゅう',
+                  description: '白あんこをたっぷり包んだ、もちもちのまんじゅう',
                   image: '/images/products-showcase-2.jpg',
                 },
                 {
-                  name: '季節の和菓子',
-                  description: 'その季節ならではの、心ときめく和菓子',
+                  name: 'いなかまんじゅう',
+                  description: '粒あんこをぎゅっと包んだ、昔ながらのまんじゅう',
+                  image: '/images/products-showcase-1.jpg',
+                },
+                {
+                  name: '栗まんじゅう',
+                  description: '白あんこと栗を包んだ、風味豊かなまんじゅう',
                   image: '/images/products-showcase-1.jpg',
                 },
               ].map((product, idx) => (
