@@ -72,17 +72,17 @@ export default function Home() {
                 {
                   name: '手づくり大福',
                   description: '季節の素材を使った、やさしい甘さの大福',
-                  image: '/manus-storage/products-showcase_de3968a9.png',
+                  image: '/images/products-showcase-1.jpg',
                 },
                 {
                   name: '昔ながらのせんべい',
                   description: 'コツコツと焼き上げた、香ばしいせんべい',
-                  image: '/manus-storage/products-showcase_de3968a9.png',
+                  image: '/images/products-showcase-2.jpg',
                 },
                 {
                   name: '季節の和菓子',
                   description: 'その季節ならではの、心ときめく和菓子',
-                  image: '/manus-storage/products-showcase_de3968a9.png',
+                  image: '/images/products-showcase-1.jpg',
                 },
               ].map((product, idx) => (
                 <div
