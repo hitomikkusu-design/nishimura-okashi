@@ -9,17 +9,13 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero Section with Video */}
+        {/* Hero Section */}
         <section className="relative h-screen max-h-96 md:max-h-screen flex items-center justify-center overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src="/images/storefront.jpg"
+            alt="西村菓子店の店構えと店員"
             className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="https://example.com/shop-video.mp4" type="video/mp4" />
-          </video>
+          />
           <div className="absolute inset-0 bg-black/30" />
 
           <div className="relative z-10 container text-center text-white">
@@ -130,7 +126,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/manus-storage/about-craftsman_e10afcbf.png"
+                  src="/images/about-craftsman-1.jpg"
                   alt="西村のおんちゃん"
                   className="rounded-lg shadow-lg w-full"
                 />

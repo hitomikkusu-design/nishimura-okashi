@@ -23,7 +23,7 @@ export default function Story() {
             {/* Profile */}
             <div className="mb-12">
               <img
-                src="/manus-storage/about-craftsman_e10afcbf.png"
+                src="/images/about-craftsman-2.jpg"
                 alt="西村のおんちゃん"
                 className="rounded-lg shadow-lg w-full mb-8"
               />
