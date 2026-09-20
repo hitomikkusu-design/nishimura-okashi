@@ -42,14 +42,14 @@ export default function Products() {
       name: 'シナモン',
       category: '白あんこ入り',
       description: 'シナモンの香りが広がる、白あんこ入りのまんじゅうです。',
-      image: './images/products-showcase-1.jpg',
+      image: './images/product-shinamon.jpg',
       price: '¥130',
     },
     {
       name: '栗まんじゅう',
       category: '白あんこと栗入り',
       description: '白あんこと栗を包んだ、風味豊かなまんじゅうです。',
-      image: './images/products-showcase-1.jpg',
+      image: './images/product-kuri-manju.jpg',
       price: '¥130',
     },
     {
@@ -86,6 +86,13 @@ export default function Products() {
       description: '土佐かつおの形をしたモナカ。つぶあん・こしあん・ゆずあんの3種類からお選びいただけます。',
       image: './images/product-katsuo-monaka.jpg',
       price: '¥280',
+    },
+    {
+      name: 'ドーナツ',
+      category: 'プレーン・白あんこ・黒あんこ',
+      description: '揚げたてのドーナツ・フライ。プレーン、白あんこ、黒あんこの3種類からお選びいただけます。',
+      image: './images/product-donut.jpg',
+      price: '¥130',
     },
   ];
 
