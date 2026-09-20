@@ -1,5 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import {
+  KakigoriIcon,
+  TokorotenIcon,
+  BusshukanIcon,
+  KoorimitsuIcon,
+} from '@/components/ProductIllustrations';
 
 export default function Products() {
   const products = [
@@ -98,28 +104,28 @@ export default function Products() {
       name: 'かき氷',
       category: '夏季限定',
       description: '夏季限定のかき氷。ひんやり冷たく、暑い日にぴったりです。',
-      image: './images/product-natsu-limited.jpg',
+      icon: KakigoriIcon,
       price: '―',
     },
     {
       name: 'ところ天',
       category: '夏季限定',
       description: '久礼名物、だしとショウガで食べるところ天。持ち帰りも店内でも。',
-      image: './images/product-natsu-limited.jpg',
+      icon: TokorotenIcon,
       price: '¥260〜',
     },
     {
       name: '仏手柑',
       category: '夏季限定',
       description: '珍しい仏手柑を1個から量り売り。',
-      image: './images/product-natsu-limited.jpg',
+      icon: BusshukanIcon,
       price: '¥30',
     },
     {
       name: '秘伝の氷みつ',
       category: '夏季限定',
       description: '数種類の味からお選びいただける、秘伝のかき氷みつです。',
-      image: './images/product-natsu-limited.jpg',
+      icon: KoorimitsuIcon,
       price: '¥780',
     },
   ];
@@ -146,17 +152,25 @@ export default function Products() {
         <section className="py-12 md:py-20 bg-warm-beige">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product, idx) => (
+              {products.map((product, idx) => {
+                const Icon = 'icon' in product ? product.icon : undefined;
+                return (
                 <div
                   key={idx}
                   className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="h-56 bg-gray-300 overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                  <div className="h-56 bg-warm-beige overflow-hidden">
+                    {Icon ? (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <Icon className="w-24 h-24" />
+                      </div>
+                    ) : (
+                      <img
+                        src={'image' in product ? product.image : undefined}
+                        alt={product.name}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    )}
                   </div>
                   <div className="p-6">
                     <p className="text-xs font-semibold text-warm-accent mb-2 uppercase tracking-wide">
@@ -178,7 +192,8 @@ export default function Products() {
                     </div>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
