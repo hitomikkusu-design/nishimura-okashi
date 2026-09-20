@@ -94,6 +94,34 @@ export default function Products() {
       image: './images/product-donut.jpg',
       price: '¥130',
     },
+    {
+      name: 'かき氷',
+      category: '夏季限定',
+      description: '夏季限定のかき氷。ひんやり冷たく、暑い日にぴったりです。',
+      image: './images/product-natsu-limited.jpg',
+      price: '―',
+    },
+    {
+      name: 'ところ天',
+      category: '夏季限定',
+      description: '久礼名物、だしとショウガで食べるところ天。持ち帰りも店内でも。',
+      image: './images/product-natsu-limited.jpg',
+      price: '¥260〜',
+    },
+    {
+      name: '仏手柑',
+      category: '夏季限定',
+      description: '珍しい仏手柑を1個から量り売り。',
+      image: './images/product-natsu-limited.jpg',
+      price: '¥30',
+    },
+    {
+      name: '秘伝の氷みつ',
+      category: '夏季限定',
+      description: '数種類の味からお選びいただける、秘伝のかき氷みつです。',
+      image: './images/product-natsu-limited.jpg',
+      price: '¥780',
+    },
   ];
 
   return (
