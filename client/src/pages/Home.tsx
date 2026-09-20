@@ -53,12 +53,12 @@ export default function Home() {
                 {
                   name: '浮粉まんじゅう',
                   description: '白あんこをたっぷり包んだ、もちもちのまんじゅう',
-                  image: './images/products-showcase-2.jpg',
+                  image: './images/product-fuko-manju.jpg',
                 },
                 {
                   name: 'いなかまんじゅう',
                   description: '粒あんこをぎゅっと包んだ、昔ながらのまんじゅう',
-                  image: './images/products-showcase-1.jpg',
+                  image: './images/product-inaka-manju.jpg',
                 },
                 {
                   name: '栗まんじゅう',

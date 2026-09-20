@@ -5,16 +5,23 @@ export default function Products() {
   const products = [
     {
       name: 'カステラまんじゅう',
-      category: 'まんじゅう',
+      category: '白あんこ入り',
       description: 'カステラ生地でつくる、ふんわりとした素朴な味わいのまんじゅうです。',
-      image: './images/products-showcase-1.jpg',
+      image: './images/product-castella-manju.jpg',
       price: '¥130',
     },
     {
       name: '浮粉まんじゅう',
       category: '白あんこ入り',
       description: '白あんこをたっぷり包んだ、もちもちの浮粉まんじゅう。',
-      image: './images/products-showcase-2.jpg',
+      image: './images/product-fuko-manju.jpg',
+      price: '¥130',
+    },
+    {
+      name: '黒糖まんじゅう',
+      category: '黒あんこ入り',
+      description: '黒糖の風味豊かな生地で、黒あんこを包んだまんじゅうです。',
+      image: './images/product-kokuto-manju.jpg',
       price: '¥130',
     },
     {
@@ -28,7 +35,7 @@ export default function Products() {
       name: 'いなかまんじゅう',
       category: '粒あんこ入り',
       description: '粒あんこをぎゅっと包んだ、昔ながらのいなかまんじゅう。',
-      image: './images/products-showcase-1.jpg',
+      image: './images/product-inaka-manju.jpg',
       price: '¥130',
     },
     {
