@@ -22,11 +22,6 @@ export default function Story() {
           <div className="container max-w-3xl">
             {/* Profile */}
             <div className="mb-12">
-              <img
-                src="./images/about-craftsman-2.jpg"
-                alt="西村のおんちゃん"
-                className="rounded-lg shadow-lg w-full mb-8"
-              />
               <div className="bg-warm-beige rounded-lg p-8">
                 <h2 className="text-2xl font-bold mb-4 text-warm-brown">
                   プロフィール
@@ -85,30 +80,6 @@ export default function Story() {
                 <p>
                   「昔ながらのお菓子」それは、単なる懐かしさではなく、おんちゃんが「食べる人の喜ぶ顔」を想いながら作り続けた、75年の想いの結晶なのです。
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Video Section */}
-        <section className="py-12 md:py-20 bg-warm-beige">
-          <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-12 text-warm-brown">
-              おんちゃんが語る、西村甘泉堂の物語
-            </h2>
-
-            <div className="max-w-3xl mx-auto">
-              <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/7xRmgZE8PLo"
-                  title="西村のおんちゃんが語る、西村甘泉堂の物語"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
               </div>
             </div>
           </div>

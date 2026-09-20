@@ -185,12 +185,36 @@
     color: #F4A460;
   }
 
+  .text-warm-cream {
+    color: #FBF8F3;
+  }
+
   .bg-warm-cream {
     background-color: #FBF8F3;
   }
 
   .bg-warm-beige {
     background-color: #E8DCC8;
+  }
+
+  .bg-warm-brown {
+    background-color: #8B7355;
+  }
+
+  .bg-warm-accent {
+    background-color: #F4A460;
+  }
+
+  .bg-warm-charcoal {
+    background-color: #3D3229;
+  }
+
+  .border-warm-cream {
+    border-color: #FBF8F3;
+  }
+
+  .border-warm-beige {
+    border-color: #E8DCC8;
   }
 
   .btn-warm {

@@ -13,53 +13,31 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-screen max-h-96 md:max-h-screen flex items-center justify-center overflow-hidden">
-          <img
-            src="./images/storefront.jpg"
-            alt="西村甘泉堂の店構えと店員"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/30" />
-
-          <div className="relative z-10 container text-center text-white">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <section className="relative py-32 md:py-48 flex items-center justify-center overflow-hidden bg-warm-charcoal">
+          <div className="relative z-10 container text-center text-warm-cream">
+            <p className="tracking-[0.3em] text-xs md:text-sm text-warm-accent mb-6 uppercase">
+              創業75年
+            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-warm-cream">
               西村甘泉堂
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              創業75年。元コックの「西村のおんちゃん」が、<br />
-              今日も一つひとつ、コツコツと手づくりしています。
-            </p>
-            <p className="text-base md:text-lg">
-              安心して食べられる、やさしく懐かしい、昔ながらのお菓子です。
+            <div className="w-16 h-px bg-warm-accent mx-auto mb-6" />
+            <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed opacity-90">
+              元コックの「西村のおんちゃん」が、今日も一つひとつ、
+              <br className="hidden md:block" />
+              コツコツと手づくりしています。
             </p>
           </div>
         </section>
 
-        {/* YouTube Video Section */}
-        <section className="py-12 md:py-20 bg-white">
-          <div className="container">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-warm-brown">
-              西村のおんちゃんが語る、<br className="md:hidden" />西村甘泉堂の物語
-            </h2>
-            <div className="section-divider" />
-
-            <div className="max-w-3xl mx-auto">
-              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/7xRmgZE8PLo"
-                  title="西村のおんちゃんが語る、西村甘泉堂の物語"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-              <p className="text-center text-gray-600 mt-4 text-sm">
-                75年の歴史と、おんちゃんの想いをお聞きください
-              </p>
-            </div>
+        {/* Brand Statement Section */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="container max-w-2xl text-center">
+            <p className="text-lg md:text-xl leading-loose text-gray-700">
+              安心して食べられる、やさしく懐かしい、
+              <br className="hidden md:block" />
+              昔ながらのお菓子です。
+            </p>
           </div>
         </section>
 
@@ -124,35 +102,25 @@ export default function Home() {
         </section>
 
         {/* About Section Preview */}
-        <section className="py-12 md:py-20 bg-white">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img
-                  src="./images/about-craftsman-1.jpg"
-                  alt="西村のおんちゃん"
-                  className="rounded-lg shadow-lg w-full"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-warm-brown">
-                  西村甘泉堂について
-                </h2>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  創業75年の西村甘泉堂。元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。
-                </p>
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
-                </p>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-warm-brown text-white rounded-lg hover:opacity-90 transition-all duration-200 font-medium"
-                >
-                  詳しく知る
-                  <ArrowRight size={18} />
-                </Link>
-              </div>
-            </div>
+        <section className="py-16 md:py-24 bg-white">
+          <div className="container max-w-2xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-warm-brown">
+              西村甘泉堂について
+            </h2>
+            <div className="w-16 h-px bg-warm-accent mx-auto mb-6" />
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              創業75年の西村甘泉堂。元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。
+            </p>
+            <p className="text-gray-700 mb-8 leading-relaxed">
+              安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
+            </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-warm-brown text-white rounded-lg hover:opacity-90 transition-all duration-200 font-medium"
+            >
+              詳しく知る
+              <ArrowRight size={18} />
+            </Link>
           </div>
         </section>
 

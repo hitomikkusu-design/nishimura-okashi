@@ -23,31 +23,21 @@ export default function About() {
         </section>
 
         {/* History Section */}
-        <section className="py-12 md:py-20 bg-warm-beige">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img
-                  src="./images/storefront.jpg"
-                  alt="西村甘泉堂の店舗"
-                  className="rounded-lg shadow-lg w-full"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-warm-brown">
-                  75年の歴史
-                </h2>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  西村甘泉堂は、創業から75年間、高知県中土佐町久礼で愛されてきた昔ながらのお菓子屋さんです。
-                </p>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。その想いと技は、今も変わることなく、多くのお客様に喜ばれています。
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
-                </p>
-              </div>
-            </div>
+        <section className="py-16 md:py-24 bg-warm-beige">
+          <div className="container max-w-2xl text-center">
+            <h2 className="text-3xl font-bold mb-6 text-warm-brown">
+              75年の歴史
+            </h2>
+            <div className="w-16 h-px bg-warm-accent mx-auto mb-6" />
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              西村甘泉堂は、創業から75年間、高知県中土佐町久礼で愛されてきた昔ながらのお菓子屋さんです。
+            </p>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              元コックの「西村のおんちゃん」が、毎日一つひとつ丁寧に手づくりしています。その想いと技は、今も変わることなく、多くのお客様に喜ばれています。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              安心して食べられる、やさしく懐かしい、昔ながらのお菓子。それが西村甘泉堂のこだわりです。
+            </p>
           </div>
         </section>
 
@@ -94,31 +84,21 @@ export default function About() {
         </section>
 
         {/* Craftsman Section */}
-        <section className="py-12 md:py-20 bg-warm-beige">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-warm-brown">
-                  西村のおんちゃん
-                </h2>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  元コックとしてのキャリアを持つ「西村のおんちゃん」。その経験と想いが、すべてのお菓子に詰まっています。
-                </p>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  毎日、朝早くから店に立ち、一つひとつのお菓子を丁寧に作っています。その姿勢は、75年間変わることなく、多くのお客様に信頼されています。
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  「安心して食べられるお菓子を作ること」それが、おんちゃんの人生のテーマです。
-                </p>
-              </div>
-              <div>
-                <img
-                  src="./images/about-craftsman-1.jpg"
-                  alt="西村のおんちゃん"
-                  className="rounded-lg shadow-lg w-full"
-                />
-              </div>
-            </div>
+        <section className="py-16 md:py-24 bg-warm-beige">
+          <div className="container max-w-2xl text-center">
+            <h2 className="text-3xl font-bold mb-6 text-warm-brown">
+              西村のおんちゃん
+            </h2>
+            <div className="w-16 h-px bg-warm-accent mx-auto mb-6" />
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              元コックとしてのキャリアを持つ「西村のおんちゃん」。その経験と想いが、すべてのお菓子に詰まっています。
+            </p>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              毎日、朝早くから店に立ち、一つひとつのお菓子を丁寧に作っています。その姿勢は、75年間変わることなく、多くのお客様に信頼されています。
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              「安心して食べられるお菓子を作ること」それが、おんちゃんの人生のテーマです。
+            </p>
           </div>
         </section>
 
