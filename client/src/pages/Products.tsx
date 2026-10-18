@@ -7,7 +7,11 @@ import {
   KoorimitsuIcon,
 } from '@/components/ProductIllustrations';
 
+const SUMMER_MONTHS = [6, 7, 8, 9];
+
 export default function Products() {
+  const isSummerSeason = SUMMER_MONTHS.includes(new Date().getMonth() + 1);
+
   const products = [
     {
       name: 'カステラまんじゅう',
@@ -154,6 +158,8 @@ export default function Products() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product, idx) => {
                 const Icon = 'icon' in product ? product.icon : undefined;
+                const isSummerLimited = product.category === '夏季限定';
+                const isLocked = isSummerLimited && !isSummerSeason;
                 return (
                 <div
                   key={idx}
@@ -182,12 +188,24 @@ export default function Products() {
                     <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                       {product.description}
                     </p>
+                    {isSummerLimited && (
+                      <p className="text-red-600 text-xs font-bold mb-4">
+                        ※夏季限定商品です。{!isSummerSeason && '現在の季節は販売しておりません。'}
+                      </p>
+                    )}
                     <div className="flex items-center justify-between">
                       <span className="text-lg font-semibold text-warm-brown">
                         {product.price}
                       </span>
-                      <button className="px-4 py-2 bg-warm-accent text-white text-sm rounded-lg hover:opacity-90 transition-all duration-200">
-                        詳細
+                      <button
+                        disabled={isLocked}
+                        className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
+                          isLocked
+                            ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                            : 'bg-warm-accent text-white hover:opacity-90'
+                        }`}
+                      >
+                        {isLocked ? '販売休止中' : '詳細'}
                       </button>
                     </div>
                   </div>
