@@ -64,7 +64,7 @@ export default function Access() {
                     <Clock className="text-warm-accent flex-shrink-0 mt-1" size={24} />
                     <div>
                       <h3 className="font-bold text-warm-brown mb-2">営業時間</h3>
-                      <p className="text-gray-700">10:00 - 17:00頃</p>
+                      <p className="text-gray-700">9:00 - 17:00頃</p>
                     </div>
                   </div>
 

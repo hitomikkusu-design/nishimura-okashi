@@ -148,7 +148,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold text-warm-brown">営業時間</p>
-                    <p className="text-gray-700">10:00 - 17:00頃</p>
+                    <p className="text-gray-700">9:00 - 17:00頃</p>
                   </div>
                   <div>
                     <p className="font-semibold text-warm-brown">定休日</p>
